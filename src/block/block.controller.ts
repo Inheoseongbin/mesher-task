@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Post } from "@nestjs/common";
+import { Controller, Get, Param } from "@nestjs/common";
 import { BlockService } from "./block.service";
 
 @Controller('block')
@@ -15,7 +15,7 @@ export class BlockController {
         return this.blockService.registByHash(hash);
     }
 
-    // @Get(':hash')
+    // @Get(':findHash')
     // findOne(@Param('hash') hash: string) {
     //     return this.blockService.findOne(hash);
     // }

@@ -21,7 +21,6 @@ import { SlackbotModule } from './slackbot/slackbot.module';
         password: configService.get('DB_PASSWORD'),
         database: configService.get('DB_DATABASE'),
         entities: [Block],
-        synchronize: true,
       }),
       inject: [ConfigService],
     }),
