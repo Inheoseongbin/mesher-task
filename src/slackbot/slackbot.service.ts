@@ -42,7 +42,7 @@ export class SlackbotService {
 
     // 이 채널로 보내기 (초대받은 곳의 채널 ID를 갖고오고싶다)
     async notifyChannel(text: string) {
-        const channelId = 'C07SZU5QZ37';
+        const channelId = process.env.SLACK_CHANNEL_ID;
         const messageText = text;
 
         await this.sendMessage(channelId, messageText);
