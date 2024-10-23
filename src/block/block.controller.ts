@@ -10,7 +10,7 @@ export class BlockController {
         return this.blockService.getLastHash();
     }
 
-    @Get('hhh/:hash')
+    @Get('/:hash')
     registByHash(@Param('hash') hash: string) {
         return this.blockService.registByHash(hash);
     }
